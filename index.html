@@ -11,7 +11,11 @@
       --light:   #f9f9f9;
       --dark:    #333;
     }
-    * { margin:0; padding:0; box-sizing:border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       font-family: Arial, sans-serif;
       color: var(--dark);
@@ -48,6 +52,9 @@
       text-decoration: none;
       font-weight: bold;
     }
+    nav a:hover {
+      text-decoration: underline;
+    }
     main {
       max-width: 800px;
       margin: 2rem auto;
@@ -76,6 +83,14 @@
       border-radius: 4px;
       font-weight: bold;
     }
+    .video-link {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    .video-link a {
+      color: var(--primary);
+      text-decoration: underline;
+    }
     footer {
       background: var(--dark);
       color: #ccc;
@@ -86,6 +101,9 @@
     footer a {
       color: #fff;
       text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -110,9 +128,8 @@
     <section id="intro">
       <h2>Introdução</h2>
       <p>
-        Apresentamos o <strong>420min por Semana</strong>, um aplicativo Android projetado para ajudar você a monitorar 
-        e registrar suas atividades físicas diárias. O objetivo é incentivar a prática de 420 minutos de atividade 
-        física por semana para promover um estilo de vida saudável. :contentReference[oaicite:0]{index=0}
+        Apresentamos o <strong>420 min por Semana</strong>, um aplicativo Android projetado para ajudar você a monitorar e registrar suas atividades físicas diárias. 
+        O objetivo é incentivar a prática de 420 minutos de atividade física por semana para promover um estilo de vida mais saudável e ativo.
       </p>
     </section>
 
@@ -120,48 +137,56 @@
       <h2>Principais Funcionalidades</h2>
       <ul>
         <li>
-          <strong>Contador de Passos:</strong> utiliza o sensor de passos do dispositivo para contar em tempo real 
-          e exibir a contagem na tela principal.
+          <strong>Contador de Passos:</strong> utiliza o sensor de passos do dispositivo para contar em tempo real e exibir a contagem na tela principal.
         </li>
         <li>
-          <strong>Registro Manual de Atividades:</strong> registre qualquer atividade física (corrida, ciclismo, 
-          natação etc.), inserindo o tipo de atividade e a duração em minutos.
+          <strong>Registro Manual de Atividades:</strong> registre qualquer atividade física (corrida, ciclismo, natação etc.), inserindo o tipo de atividade e a duração em minutos.
+        </li>
+        <li>
+          <strong>Histórico Semanal:</strong> acompanhe quanto tempo de atividade você já completou na semana atual.
+        </li>
+        <li>
+          <strong>Notificações:</strong> receba lembretes diários para manter seu desafio em dia.
         </li>
       </ul>
-      <p>
-        Exemplo: caminhe 1000 passos e veja a contagem atualizar; registre uma corrida de 30 minutos manualmente 
-        e salve no banco de dados. :contentReference[oaicite:1]{index=1}
-      </p>
     </section>
 
     <section id="store">
       <h2>Armazenamento e Exibição de Dados</h2>
       <ul>
-        <li><strong>Armazenamento Local:</strong> todos os dados ficam no seu dispositivo, garantindo rapidez e segurança.</li>
-        <li><strong>Exibição dos Dados:</strong> acompanhe suas atividades em uma lista com tipo de exercício e duração. :contentReference[oaicite:2]{index=2}</li>
+        <li><strong>Armazenamento Local:</strong> todos os dados ficam no seu dispositivo, garantindo rapidez e privacidade.</li>
+        <li><strong>Exibição dos Dados:</strong> veja uma lista detalhada com cada atividade registrada, tipo e duração.</li>
+        <li><strong>Resumo Semanal:</strong> veja um gráfico simples (em futuras versões) com seu progresso.</li>
       </ul>
     </section>
 
     <section id="benef">
       <h2>Benefícios</h2>
       <ul>
-        <li><strong>Incentivo à Atividade Física:</strong> monitore seu progresso para alcançar 420 minutos semanais.</li>
-        <li><strong>Facilidade de Uso:</strong> interface intuitiva e amigável.</li>
-        <li><strong>Monitoramento Constante:</strong> mantenha-se motivado vendo seus passos e atividades diárias.</li>
-        <li><strong>Armazenamento Seguro:</strong> dados armazenados localmente, garantido acesso rápido. :contentReference[oaicite:3]{index=3}</li>
-        <li><strong>Benefícios à Saúde:</strong> melhora cardiovascular, fortalecimento muscular, redução do estresse e melhora do humor. :contentReference[oaicite:4]{index=4}</li>
+        <li><strong>Incentivo à Atividade Física:</strong> monitore seu progresso para alcançar a meta de 420 minutos semanais.</li>
+        <li><strong>Interface Intuitiva:</strong> fácil de usar, sem complicações.</li>
+        <li><strong>Motivação Constante:</strong> mantenha-se engajado vendo seus dados atualizados.</li>
+        <li><strong>Saúde em Dia:</strong> melhora cardiovascular, fortalecimento muscular, redução do estresse e bem-estar geral.</li>
       </ul>
     </section>
 
     <section id="instal">
       <h2>Como instalar o APK</h2>
+
+      <div class="video-link">
+        📺 <strong>Assista ao tutorial em vídeo:</strong>
+        <a href="https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID" target="_blank" rel="noopener">
+          Clique aqui para ver no YouTube
+        </a>
+      </div>
+
       <ol>
         <li>Baixe o arquivo <code>420min.apk</code> no seu dispositivo Android.</li>
         <li>Acesse o app <strong>Configurações</strong>.</li>
-        <li>Entre em <strong>Segurança e privacidade</strong> (ou <em>Segurança</em>).</li>
-        <li>Habilite <strong>Instalar apps de fontes desconhecidas</strong> ou <strong>Permitir desta fonte</strong>.</li>
-        <li>Abra seu gerenciador de arquivos (Downloads) e toque em <strong>420min.apk → Instalar</strong>.</li>
-        <li>Ao concluir, abra o app e comece seu desafio de 420 minutos!</li>
+        <li>Entre em <strong>Segurança e privacidade</strong> (ou <em>Segurança</em> / <em>Aplicativos</em>, dependendo do fabricante).</li>
+        <li>Habilite a opção <strong>Instalar apps de fontes desconhecidas</strong> ou <strong>Permitir desta fonte</strong>.</li>
+        <li>Abra o gerenciador de arquivos (por exemplo, <em>Downloads</em>) e toque em <strong>420min.apk → Instalar</strong>.</li>
+        <li>Ao concluir a instalação, abra o app e comece seu desafio de 420 minutos!</li>
       </ol>
     </section>
 
